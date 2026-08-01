@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio | Folakemi Victoria</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="icon" type="image/png" href="fk-favicon.png">
+    <link rel="stylesheet" href="style.css">
+<style>
+  .card{
+  transition:transform 0.3s ease box-shadow 0.3s ease;  
+  }
+  
+  
+  .card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+</style>
+</head>
+<body>
+  <div id="loader">
+    <div class="spinner-border text-primary" role="status">
+      <span class="visuall-hidden">Loading...
+
+      </span>
+    </div>   
+  </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="service.html">Service</a>
+
+            </li>
+                <li class="nav-item">
+              <a class="nav-link" href="contact.html">C0ntact</a>
+
+            </li>
+             <li class="nav-item active">
+              <a class="nav-link" href="project.html">Project</a>
+
+            </li>
+
+
+
+             </ul>
+
+        </div>
+         
+
+        </div>
+
+      </div>
+
+    </nav>
+    <section class="container py-5" data-aos="fade-up">
+      <h1 class="text-center mb-5">My Projects</h1>
+      <div class="row">
+        <div class="card h-100" data-aos="zoom-in">
+          <div class="card shadow">
+            <img src="my profile pix.png" class="card-img-top" alt="Portfolio   Website">
+            <div class="card-body text-center">
+              <h4>Portfolio Website</h4>
+              <p>A respnsive portfolio website built with HTML, CSS and Bootstrap.</p>
+              <a href="portfolio-project.html" class="btn btn-primary btn-lg">Veiw Project</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+         <div class="card h-100" data-aos="zoom-in">
+           <div class="card shadow">
+             <img src="my profile pix.png" class="card-img-top" alt="Portfolio   Website">
+            
+             <div class="card-body text-center">
+              <h4>Calculator App</h4>
+              <p>A simple calculator created using JavaScript</p>
+                <a href="calculator-project.html" class="btn btn-primary btn-lg">Veiw Project</a>
+             </div>
+
+           </div>
+
+         </div>
+          <div class="card h-100"  data-aos="zoom-in">
+             <div class="card shadow">
+               <img src="my profile pix.png" class="card-img-top" alt="Portfolio   Website">
+            
+               <div class="card-body text-center">
+                <h4>School Website</h4>
+              <p>A mordern school website built with Bootstrap.</p>
+              <a href="school-project.html" class="btn btn-primary btn-lg">Veiw Project</a>
+
+               </div>
+
+             </div>
+             
+            
+
+          </div>
+
+
+      </div>
+
+
+
+    </section>
+     <section class="bg-primary text-white text-center p-5 mt-5">
+      <h2>Let's Build Something Amazing</h2>
+      <p>I am ready to help you create beautiful and respnsive websites.</p>
+      <a href="contact.html" btn btn-light btn-lg>Hire Me</a>
+
+     </section>
+
+
+
+
+     <footer class="bg-dark text-white text-center p-4 mt-5" data-aos="fade-up">
+        <h5>My Portfolio</h5>
+        <p>Building beautiful, responsive and user-friendly wedsites.</p>
+        <p>Email mvfol@gmail.com <br>+2348162275740</p>
+        <p>&copy 2026 my portfolio. All Rights Reserved.</p>
+          <div class="mb-3">
+          <a href="#" class="bi bi-facebook"></a>
+           <a href="#" class="bi bi-linkedin"></a>
+            <a href="#" class="bi bi-github"></a>
+              </div>
+        <p>Designed by Victoria</p>
+
+      </footer>
+       <a href="#" id="backToTop"
+    class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-4">
+  <i class="bi bi-arrow-up"></i></a>
+    <script>
+      const backToTop = document.getElementById("backToTop");
+      window.addEventListener("scroll", function () {
+        if(window.scrollY> 200) {
+          backToTop.style.display = "block";
+        } else{
+          backToTop.style.display = "none";
+        }
+      } );
+      backToTop.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth"});
+      });
+    </script>
+
+<script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration:1000,
+    once:true
+  }
+
+  );
+</script>
+  
+</body>
+</html>

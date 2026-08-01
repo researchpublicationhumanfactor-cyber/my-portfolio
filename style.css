@@ -1,0 +1,113 @@
+.navbar-nav .nav-link{
+  transition: color 0.3s ease;
+}
+.navbar-nav .nav-link:hover{
+  color: #ffc107 !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+#backToTop {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+ 
+}
+#backToTop:hover{
+  background-color: #0b5ed7;
+  transform: scale(1.1);
+  transition: all 3s ease;
+}
+.card{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+.card:hover{
+  transform: rotateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);  
+}
+.card:hover img{
+  transform: scale(1.08);
+}
+.btn{
+  transition: all 0.3s ease;
+}
+.btn:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgb(0, 0, 0, 0.2);
+  
+}
+.btn-primary{
+  transition: all 3s ease;
+}
+.btn-primary:hover{
+  transform: scale(1.08);
+}
+.btn-success{
+  transition: all 3s ease;
+}
+.btn-success:hover{
+  transform: scale(1.08);
+}
+.btn-warning{
+  transition: all 3s ease;
+}
+.btn-warning:hover{
+  transform: scale(1.08);
+}
+.fade-in{
+  opacity: 1;
+  transform: translateY(30px);
+  transition: all 1s ease;
+}
+
+.fade-in.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+.progress{
+  height: 25px;
+  border-radius: 15px;
+
+}
+.progress-bar{
+  font-weight: bold;
+  transition: width 1s ease;
+}
+.progress:hover{
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+.text-warning{
+  letter-spacing: 3px;
+}
+.card{
+  border: none;
+  border-radius: 15px;
+}
+.card h2{
+  font-weight: bold;
+}
+.form-control{
+  border-radius: 10px;
+}
+.bg-primary{
+  background: linear-gradient(135deg,#0d6efd, #0b5ed7) !important;
+  border-radius: 30px;
+  padding: 10px 30px;
+}
+.bg-primary .btn{
+  transition: 0.3s;
+}
+.bg-primary .btn:hover{
+  transform: scale(1.05);
+}
+html{
+  scroll-behavior: smooth;
+}
+
+
+

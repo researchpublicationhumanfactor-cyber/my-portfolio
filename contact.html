@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio | Folakemi Victoria</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="icon" type="image/png" href="fk-favicon.png">
+    
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <div id="loader">
+    <div class="spinner-border text-primary" role="status">
+      <span class="visuall-hidden">Loading...
+
+      </span>
+    </div>   
+  </div>
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="service.html">Service</a>
+
+            </li>
+                <li class="nav-item">
+              <a class="nav-link active" href="contact.html">C0ntact</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="project.html">Project</a>
+
+            </li>
+
+
+
+
+          </ul>
+
+        </div>
+
+        </div>
+
+      </div>
+
+    </nav>
+
+    <div class="container py-5" data-aos="fade-left">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card shadow p-4">
+      <h2 class="text-center mb-4">contact Me</h2>
+      <p class="text-center">Feel free to contact me using the form below.</p>
+    <form id="contactform">
+      <div class="mb-3">
+        <label class="form-label">Full Name</label>
+        <input type="text" class="form-control"
+         placeholder="Enter your name">
+ </div>
+
+      <div class="mb-3">
+        <label class="form-label">Email Address</label>
+        <input type="email" class="form-control" placeholder="Enter your email">
+  </div>
+
+      <div class="mb-3">
+        <label class="form-label">Message</label>
+        <textarea class="form-control" rows="5" placeholder="Write your Message"></textarea>
+   </div>
+
+      <button class="btn btn-primary px-4">Submit</button>
+      <p id="successMessage" class="text-success mt-3 text-center"
+      style="display: none;">Thank you! Your Message has been sent successfully.
+
+      </p>
+       </div>
+    </form>
+     </div>
+      </div>
+      </div>
+
+
+    </div>
+
+
+
+
+
+     <footer class="bg-dark text-white text-center p-4 mt-5" data-aos="fade-up">
+        <h5>My Portfolio</h5>
+        <p>Building beautiful, responsive and user-friendly wedsites.</p>
+        <p>Email mvfol@gmail.com <br>+2348162275740</p>
+          <div class="mb-3">
+          <a href="#" class="bi bi-facebook"></a>
+           <a href="#" class="bi bi-linkedin"></a>
+            <a href="#" class="bi bi-github"></a>
+              </div>
+        <p>&copy 2026 my portfolio. All Rights Reserved.</p>
+        <p>Designed by Victoria</p>
+
+      </footer>
+       <a href="#" id="backToTop"
+    class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-4">
+  <i class="bi bi-arrow-up"></i></a>
+    <script>
+      const backToTop = document.getElementById("backToTop");
+      window.addEventListener("scroll", function () {
+        if(window.scrollY> 200) {
+          backToTop.style.display = "block";
+        } else{
+          backToTop.style.display = "none";
+        }
+      } );
+      backToTop.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth"});
+      });
+    </script>
+    <script src="script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration:1000,
+    once:true
+  }
+
+  );
+</script>
+
+  
+</body>
+</html>
